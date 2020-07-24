@@ -1,0 +1,6 @@
+# Redirects from what the browser requests to what we serve
+# A basic redirect rule
+[[redirects]]
+  from = "https://dgcoresol.netlify.app/about.html"
+  to = "https://dgcoresol.netlify.app/about1"
+  status = 200

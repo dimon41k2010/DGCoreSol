@@ -1,0 +1,42 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.container {  
+    background-color: #ccc;
+    border: 2px solid blue;
+    display: flex;
+    list-style: none;
+    /* height: 100%; */
+    /* align-items: center; */
+    /* flex-wrap: wrap;  */
+}
+
+.search {
+    flex-grow: 1;
+}
+@media all and (max-width: 600px) {
+    .container {
+        flex-wrap: wrap;
+
+    }
+    .container > li {
+        flex: 1 1 50%;
+    }
+    .search > input {
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .container > li {
+        flex: 1 1 100%;
+    }
+    .search {
+        order: 1;
+    }
+}
